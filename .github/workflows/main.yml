@@ -40,7 +40,7 @@ jobs:
         echo "Artifactory URL: $artifactory_url"
 
         # Fly CLI validation command (replace with actual fly command if needed)
-        fly validate-pipeline --config=ci/pipelines --var "gitlab-url=$gitlab_url" --var "gitlab-project=$gitlab_project" --var "artifactory-url=$artifactory_url"
+        fly validate-pipeline --var "gitlab-url=$gitlab_url" --var "gitlab-project=$gitlab_project" --var "artifactory-url=$artifactory_url"
 
     # Notify GitLab MR on failure
     - name: Notify GitLab MR - Status Failed
