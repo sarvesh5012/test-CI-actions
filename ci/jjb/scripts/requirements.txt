@@ -1,0 +1,23 @@
+akamai-edgeauth==0.3.2
+bs4==0.0.1
+jmespath>=1.0.1,<2.0.0
+jenkins-job-builder==4.1.0
+python-jenkins==1.7.0
+requests<3.0
+pynetbox==7.0.1
+paramiko==3.2.0
+edgeops-vco>=0.4.6,<2.0.0
+
+#google-cloud-logging
+google-api-core          ~= 2.19.0
+google-api-python-client ~= 2.129.0
+google-auth              ~= 2.29.0
+google-auth-httplib2     ~= 0.2.0
+google-cloud-compute     ~= 1.18.0
+googleapis-common-protos ~= 1.63.0
+
+# Added to stop pytest segfault
+cryptography<42.0.8
+
+# Env0 deployment requirements
+python-hcl2==4.3.3
